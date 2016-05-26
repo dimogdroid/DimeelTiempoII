@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:weightSum="5.1"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="dimogdroid.com.dimeeltiempo.MainActivity"
+    tools:showIn="@layout/activity_main">
+
+
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cardfavoritos"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="2dp"
+        android:layout_marginTop="3dp"
+        android:layout_weight="1"
+        card_view:cardBackgroundColor="#8BC34A"
+        card_view:cardCornerRadius="2dp">
+        <com.andexert.library.RippleView
+            android:id="@+id/rplfavoritos"
+            rv_centered="true"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="2dp">
+
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                >
+
+                <LinearLayout
+                    android:id="@+id/lytactivofav"
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:layout_alignParentTop="true"
+                    android:background="#C987E2"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="@string/favoritos" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/lytfavinterior"
+                    android:layout_below="@+id/lytactivofav"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#8BC34A"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+
+                    <Spinner
+                        android:id="@+id/spnfav"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.95"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:gravity="center_vertical"
+                        style="@style/Widget.AppCompat.Spinner.Underlined"/>
+
+                    <ImageView
+                        android:id="@+id/imgdelfav"
+                        android:layout_width="50dp"
+                        android:layout_weight="0.05"
+                        android:layout_height="37dp"
+                        android:src="@drawable/delfav"
+                        android:layout_gravity="center"
+                        android:background="@null"
+                        android:scaleType="fitCenter"
+                        android:padding="3dp"
+                        />
+
+                </LinearLayout>
+
+            </RelativeLayout>
+        </com.andexert.library.RippleView>
+    </android.support.v7.widget.CardView>
+
+
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cardespania"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="2dp"
+        android:layout_marginTop="2dp"
+        android:layout_weight="2"
+        card_view:cardBackgroundColor="#03A9F4"
+        card_view:cardCornerRadius="4dp"
+        card_view:contentPadding="2dp">
+
+        <com.andexert.library.RippleView
+            android:id="@+id/rplespania"
+            rv_centered="true"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp">
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <LinearLayout
+                android:id="@+id/lytactivoesp"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_alignParentTop="true"
+                android:background="#FFFFFF"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="@string/spania" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lytspaniainterior"
+                android:layout_below="@+id/lytactivoesp"
+                android:layout_above="@+id/imgaddfavesp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#03A9F4"
+                android:orientation="vertical"
+                android:weightSum="1">
+
+                <Spinner
+                    android:id="@+id/spnspainprov"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.5"
+                    android:gravity="center"/>
+
+                <Spinner
+                    android:id="@+id/spnspainmun"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.5"
+                    android:gravity="center"/>
+
+            </LinearLayout>
+            <ImageView
+                android:id="@+id/imgaddfavesp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:src="@drawable/stargold"
+
+                />
+
+
+        </RelativeLayout>
+        </com.andexert.library.RippleView>
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cardresto"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="40dp"
+        android:layout_marginTop="2dp"
+        android:layout_weight="2"
+        card_view:cardBackgroundColor="#FFC107"
+        card_view:cardCornerRadius="4dp"
+        card_view:contentPadding="2dp">
+
+        <com.andexert.library.RippleView
+            android:id="@+id/rplresto"
+            rv_centered="true"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp">
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <LinearLayout
+                android:id="@+id/lytactivoresto"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_alignParentTop="true"
+                android:background="#FFFFFF"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="RESTO PAISES" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lytrestointerior"
+                android:layout_below="@+id/lytactivoresto"
+                android:layout_above="@+id/imgaddfavrest"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#FFC107"
+                android:orientation="vertical"
+                android:weightSum="1">
+
+                <Spinner
+                    android:id="@+id/spnrestocontinente"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.5"
+                    android:gravity="center"/>
+
+                <Spinner
+                    android:id="@+id/spnrestociudad"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.5"
+                    android:gravity="center"/>
+
+            </LinearLayout>
+            <ImageView
+                android:id="@+id/imgaddfavrest"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:src="@drawable/starblue"
+
+                />
+        </RelativeLayout>
+        </com.andexert.library.RippleView>
+    </android.support.v7.widget.CardView>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:layout_weight="0.1">
+        <ImageView
+            android:id="@+id/imgalarmago"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/alarm"
+            android:layout_marginRight="5dp"/>
+        <TextView
+            android:id="@+id/txtalarma"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/recordatorio"
+            android:gravity="center_vertical"
+            />
+
+        <ImageView
+            android:id="@+id/imgalmcancel"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/deletealarm"
+            android:layout_marginLeft="7dp"/>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Dime el Tiempo</string>
+    <string name="action_settings">Configuración</string>
+    <string name="clickme">Púlsame !</string>
+    <string name="error_not_found">Página no encontrada</string>
+    <string name="error_unahthorized">Usuario y/o contraseña incorrecta</string>
+    <string name="error_no_connection">offline</string>
+    <string name="error_connection_rejected">connection refused</string>
+    <string name="error_no_data">No se obtuvieron datos</string>
+    <string name="error_unknown_error">An unknown error occurred</string>
+    <string name="error_reading_error">Error leyendo respuesta</string>
+    <string name="Cargando">Cargando...</string>
+    <string name="grados">grados</string>
+    <string name="recordatorio">Añadir alarma</string>
+    <string name="dias">Días</string>
+    <string name="aceptar">Aceptar</string>
+    <string name="cancelar">Cancelar</string>
+    <string name="hora">Hora</string>
+    <string name="lunes">Lunes</string>
+    <string name="martes">Martes</string>
+    <string name="miercoles">Miercoles</string>
+    <string name="jueves">Jueves</string>
+    <string name="viernes">Viernes</string>
+    <string name="sabado">Sábado</string>
+    <string name="domingo">Domingo</string>
+    <string name="titulodias">Días</string>
+    <string name="notifica">Dime el Tiempo</string>
+    <string name="notificacreada">Alarm created</string>
+    <string name="spania">España</string>
+    <string name="favoritos">Favoritos</string>
+</resources>

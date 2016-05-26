@@ -1,0 +1,14 @@
+
+<TextView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    style="?android:attr/spinnerItemStyle"
+    android:id="@+id/txtspinnerres"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:text="Alcalá de Guadaira"
+    android:background="@drawable/border_textview_res"
+    android:textColor="#003249"
+    android:fontFamily="sans-serif-condensed"
+    android:textSize="25dp"
+    android:padding="5dp"/>

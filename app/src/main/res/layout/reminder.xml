@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fbutton="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_marginTop="15dp">
+
+        <info.hoang8f.widget.FButton
+            android:id="@+id/btndias"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            fbutton:buttonColor="@color/fbutton_color_peter_river"
+            fbutton:shadowColor="@color/fbutton_color_asbestos"
+            fbutton:shadowEnabled="true"
+            fbutton:shadowHeight="5dp"
+            android:textColor="#FFFFFF"
+            fbutton:cornerRadius="5dp"
+            android:text="@string/dias"
+            android:layout_marginBottom="15dp"
+            />
+
+        <TextView
+            android:id="@+id/txtdiassemana"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Lunes, Martes, Miercoles"
+            android:gravity="center"
+            android:layout_marginBottom="10dp"/>
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/holo_green_light" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="15dp"
+        android:gravity="center">
+
+        <info.hoang8f.widget.FButton
+            android:id="@+id/btnhora"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            fbutton:buttonColor="@color/fbutton_color_peter_river"
+            fbutton:shadowColor="@color/fbutton_color_asbestos"
+            fbutton:shadowEnabled="true"
+            fbutton:shadowHeight="5dp"
+            fbutton:cornerRadius="5dp"
+            android:textColor="#FFFFFF"
+            android:text="@string/hora"
+            />
+        <TextView
+            android:id="@+id/txthora"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/black" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="10dp">
+
+        <info.hoang8f.widget.FButton
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            fbutton:buttonColor="@color/fbutton_color_turquoise"
+            fbutton:shadowColor="@color/fbutton_color_asbestos"
+            fbutton:shadowEnabled="true"
+            fbutton:shadowHeight="5dp"
+            fbutton:cornerRadius="5dp"
+            android:text="@string/cancelar"
+            android:layout_marginRight="20dp"
+        />
+        <info.hoang8f.widget.FButton
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            fbutton:buttonColor="@color/fbutton_color_turquoise"
+            fbutton:shadowColor="@color/fbutton_color_asbestos"
+            fbutton:shadowEnabled="true"
+            fbutton:shadowHeight="5dp"
+            fbutton:cornerRadius="5dp"
+            android:text="@string/aceptar"
+            />
+
+
+    </LinearLayout>
+
+</LinearLayout>

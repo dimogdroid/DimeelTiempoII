@@ -1,0 +1,175 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:baselineAligned="false"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="7"
+            android:layout_margin="2dp">
+            <TextView
+                android:layout_weight="1"
+                android:id="@+id/txtlunes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Lu"
+                android:textColor="#FFFFFF"
+                android:background="#EA0E20"
+                android:padding="2dp"
+                android:gravity="center"
+                android:layout_margin="2dp">
+            </TextView>
+            <TextView
+                android:layout_weight="1"
+                android:id="@+id/txtmartes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ma"
+                android:textColor="#FFFFFF"
+                android:background="#EA0E20"
+                android:padding="2dp"
+                android:gravity="center"
+                android:layout_margin="2dp">
+            </TextView>
+            <TextView
+                android:layout_weight="1"
+                android:id="@+id/txtmiercoles"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mi"
+                android:textColor="#FFFFFF"
+                android:background="#EA0E20"
+                android:padding="2dp"
+                android:gravity="center"
+                android:layout_margin="2dp">
+            </TextView>
+            <TextView
+                android:layout_weight="1"
+                android:id="@+id/txtjueves"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ju"
+                android:textColor="#FFFFFF"
+                android:background="#EA0E20"
+                android:padding="2dp"
+                android:gravity="center"
+                android:layout_margin="2dp">
+            </TextView>
+            <TextView
+                android:layout_weight="1"
+                android:id="@+id/txtviernes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Vi"
+                android:textColor="#FFFFFF"
+                android:background="#EA0E20"
+                android:padding="2dp"
+                android:gravity="center"
+                android:layout_margin="2dp">
+            </TextView>
+            <TextView
+                android:layout_weight="1"
+                android:id="@+id/txtsabado"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sa"
+                android:textColor="#FFFFFF"
+                android:background="#EA0E20"
+                android:padding="2dp"
+                android:gravity="center"
+                android:layout_margin="2dp">
+            </TextView>
+            <TextView
+                android:layout_weight="1"
+                android:id="@+id/txtdomingo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Do"
+                android:textColor="#FFFFFF"
+                android:background="#EA0E20"
+                android:padding="2dp"
+                android:gravity="center"
+                android:layout_margin="2dp">
+            </TextView>
+
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btndias"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="20dp"
+            android:background="#33B5E5"
+            android:text="@string/dias"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold" >
+        </Button>
+
+        <TextView
+            android:id="@+id/txthora"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:text="18:35 H"
+            android:textColor="#7C7C7C"
+            android:textSize="22dp"
+            android:textStyle="bold" >
+        </TextView>
+
+        <Button
+            android:id="@+id/btnhora"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="#33B5E5"
+            android:text="@string/hora"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold" >
+        </Button>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btn_cancelar"
+            style="@style/CustomStyleButtonNew"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:layout_weight="1.0"
+            android:text="@string/cancelar" >
+        </Button>
+
+        <Button
+            android:id="@+id/btn_aceptar"
+            style="@style/CustomStyleButtonNew"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:layout_weight="1.0"
+            android:text="@string/aceptar" >
+        </Button>
+    </LinearLayout>
+
+</LinearLayout>

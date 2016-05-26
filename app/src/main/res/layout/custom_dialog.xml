@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <FrameLayout
+        android:id="@+id/publicidad"
+        android:layout_width="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:id="@+id/txtprovhablado"
+        android:text="Sevilla"
+        android:gravity="center"
+        android:textSize="30dp"
+        android:textColor="#ff1a1a"
+        android:paddingTop="15dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_below="@+id/txtprovhablado"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtmunhablado"
+        android:text="Castilleja de la Cuesta"
+        android:textSize="50dp"
+        android:textColor="#3333ff"
+        android:gravity="center"
+        android:paddingTop="5dp"/>
+
+    <com.skyfishjy.library.RippleBackground
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/content"
+        app:rb_color="#0099CC"
+        app:rb_radius="32dp"
+        app:rb_rippleAmount="4"
+        app:rb_duration="3000"
+        app:rb_scale="6"
+        android:layout_below="@+id/txtprovhablado">
+        <ImageView
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+
+            android:layout_centerInParent="true"
+            android:id="@+id/imgStop"
+            android:src="@drawable/sonidooff"/>
+    </com.skyfishjy.library.RippleBackground>
+
+
+
+
+
+</RelativeLayout>
