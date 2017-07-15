@@ -1,10 +1,12 @@
-package dimogdroid.com.dimeeltiempo;
+package dimogdroid.com.util;
 
 import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.widget.Toast;
+
+import dimogdroid.com.dimeeltiempo.MainActivity;
 
 /**
  * Created by ddavila on 17/05/2016.
@@ -15,7 +17,10 @@ public class EntryReceiver extends BroadcastReceiver {
     @Override
     public void onReceive(Context context, Intent intent) {
 
-       try {
+       Toast.makeText(context, "Time is up!!!!.",
+              Toast.LENGTH_LONG).show();
+
+        try {
             Bundle bundle = intent.getExtras();
             String provincia = bundle.getString("provincia");
             String municipio = bundle.getString("municipio");
@@ -33,8 +38,4 @@ public class EntryReceiver extends BroadcastReceiver {
 
         }
     }
-
-
-
-
 }

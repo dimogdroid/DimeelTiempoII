@@ -10,6 +10,16 @@ public class Favoritos {
     private String municipio;
     private String url;
 
+    public Favoritos(int idFavoritos, String provincia, String municipio, String url) {
+        this.idFavoritos = idFavoritos;
+        this.provincia = provincia;
+        this.municipio = municipio;
+        this.url = url;
+    }
+
+    public Favoritos() {
+    }
+
     public int getIdFavoritos() {
         return idFavoritos;
     }

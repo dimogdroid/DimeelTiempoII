@@ -13,12 +13,12 @@
     <string name="error_unahthorized">Error unahthorized</string>
     <string name="error_unknown_error">Error desconocido</string>
     <string name="Cargando">Loading...</string>
-    <string name="grados">degreess</string>
+    <string name="grados">grados</string>
     <string name="recordatorio">Add alarm</string>
     <string name="dias">Days</string>
     <string name="aceptar">Accept</string>
     <string name="cancelar">Cancel</string>
-    <string name="hora">Time</string>
+    <string name="hora">time</string>
     <string name="lunes">Monday</string>
     <string name="martes">Tuesday</string>
     <string name="miercoles">Wednesday</string>
@@ -27,16 +27,15 @@
     <string name="sabado">Saturday</string>
     <string name="domingo">Sunday</string>
     <string name="titulodias">Days</string>
-    <string name="notifica">Tell Me the Weather</string>
+    <string name="notifica">Dime el Tiempo</string>
     <string name="dateinvalid">Invalid Date/Time</string>
-    <string name="notificacreada">Alarm created</string>
+    <string name="notificacreada">Next Alarm</string>
     <string name="spania">Spania</string>
     <string name="favoritos">Favorites</string>
-    <string name="otros">Others</string>
-
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
-    <string name="addfav">Added to Favorites</string>
-    <string name="estasseguro">Are you sure?</string>
+    <string name="manana"> . And tomorrow, </string>
+    <string name="alarmainvalida">    Alarm Error</string>
+    <string name="delalarma">Del Alarm</string>
+    <string name="textalarma">You want to delete the alarm?</string>
+    <string name="borrar">Delete</string>
 
 </resources>

@@ -36,14 +36,12 @@ public class Conexion {
     private static final String HOME = "http://www.tiempo.es/sevilla-sevilla-es0se0093.html";
     //private static final String HOME2 = "";
 
-    String lugarTiempo;
+
     String url;
 
 
-    public Conexion(String lugarTiempo) {
-        
-        this.lugarTiempo = lugarTiempo;
-        
+    public Conexion() {
+
         url=HOME;
         
     }
@@ -54,14 +52,6 @@ public class Conexion {
 		else
 			return "0" + String.valueOf(c);
 	}
-
-    public String getLugarTiempo() {
-        return lugarTiempo;
-    }
-
-    public void setLugarTiempo(String lugarTiempo) {
-        this.lugarTiempo = lugarTiempo;
-    }
 
     public static void checkConnection(Context context) throws ConnectionException {
         final ConnectivityManager connMgr = (ConnectivityManager) context
@@ -121,7 +111,7 @@ public class Conexion {
                     throw new ConnectionException(ConnectionException.ConnectionError.getErrorByCode(codigo));
                 }
             } catch (IOException e) {
-                CustomLog.error("conectar", "Error: " + e.getMessage()); // Conexi�n rechazada
+                CustomLog.error("conectar", "Error: " + e.getMessage()); // Conexion rechazada
                 throw new ConnectionException(ConnectionException.ConnectionError.CONNECTION_REJECTED);
             }
         }

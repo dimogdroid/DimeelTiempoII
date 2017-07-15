@@ -6,6 +6,7 @@ package dimogdroid.com.entidades;
 public class Municipio {
 
     private int idProvincia;
+    private String provincia;
     private int idMunicipio;
     private String municipio;
     private String url;
@@ -16,6 +17,14 @@ public class Municipio {
 
     public void setIdProvincia(int idProvincia) {
         this.idProvincia = idProvincia;
+    }
+
+    public String getProvincia() {
+        return provincia;
+    }
+
+    public void setProvincia(String provincia) {
+        this.provincia = provincia;
     }
 
     public int getIdMunicipio() {
