@@ -37,7 +37,6 @@ import java.util.Calendar;
 import java.util.List;
 import java.util.Locale;
 
-import br.com.simplepass.loading_button_lib.customViews.CircularProgressButton;
 import br.com.simplepass.loading_button_lib.interfaces.OnAnimationEndListener;
 import cn.pedant.SweetAlert.SweetAlertDialog;
 import dimogdroid.com.api.Conexion;
@@ -48,6 +47,7 @@ import dimogdroid.com.entidades.Favoritos;
 import dimogdroid.com.entidades.Municipio;
 import dimogdroid.com.entidades.Provincia;
 import dimogdroid.com.util.Utilidades;
+import info.hoang8f.widget.FButton;
 
 import static android.R.attr.fillColor;
 import static dimogdroid.com.dimeeltiempo.R.id.spnMunicipios;
@@ -65,8 +65,8 @@ public class TabSpania extends Fragment  implements TextToSpeech.OnInitListener{
 
     Spinner spnProv;
     Spinner spnMun;
-    CircularProgressButton btnSpaniaHablar;
-    CircularProgressButton btnSpaniaFav;
+    FButton btnSpaniaHablar;
+    ImageView btnSpaniaFav;
 
     public String lugar;
 
@@ -94,7 +94,7 @@ public class TabSpania extends Fragment  implements TextToSpeech.OnInitListener{
         spnMun = (Spinner) view.findViewById(spnMunicipios);
         //btnSpaniaHablar = (FloatingTextButton) view.findViewById(R.id.btnSpania);
 
-        btnSpaniaHablar = (CircularProgressButton) view.findViewById(R.id.btn_id);
+        btnSpaniaHablar = (FButton) view.findViewById(R.id.btn_id);
         imgFavSpania = (ImageView)  view.findViewById(R.id.imgaddfavesp);
 
 
@@ -381,21 +381,19 @@ public class TabSpania extends Fragment  implements TextToSpeech.OnInitListener{
 
     class TextoHablado extends AsyncTask<String, Integer, String> {
 
-        //SweetAlertDialog pDialog;
+        SweetAlertDialog pDialog;
         String tiempo;
 
         @Override
         protected void onPreExecute() {
 
-            btnSpaniaHablar.startAnimation();
 
-       //     btnSpaniaFav.startAnimation();
 
-          //  pDialog = new SweetAlertDialog(getContext(), SweetAlertDialog.PROGRESS_TYPE);
-          //  pDialog.getProgressHelper().setBarColor(Color.parseColor("#A5DC86"));
-          //  pDialog.setTitleText(getString(R.string.Cargando));
-          //  pDialog.setCancelable(false);
-          //  pDialog.show();
+            pDialog = new SweetAlertDialog(getContext(), SweetAlertDialog.PROGRESS_TYPE);
+            pDialog.getProgressHelper().setBarColor(Color.parseColor("#A5DC86"));
+            pDialog.setTitleText(getString(R.string.Cargando));
+            pDialog.setCancelable(false);
+            pDialog.show();
 
         }
 
@@ -462,8 +460,7 @@ public class TabSpania extends Fragment  implements TextToSpeech.OnInitListener{
 
             //textoHablado();
 
-            btnSpaniaHablar.revertAnimation();
-      //      btnSpaniaFav.revertAnimation();
+            pDialog.cancel();
 
             mostrarDialogo();
 
