@@ -116,7 +116,6 @@ public class TabSpania extends Fragment  implements TextToSpeech.OnInitListener{
 
 
 
-       // spnProv.setItems(lstProvincias);
 
 
         //Cargamos la primera provincia, que es A Coruña
