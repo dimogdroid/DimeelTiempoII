@@ -453,7 +453,7 @@ public class TabFavoritos extends Fragment   implements TextToSpeech.OnInitListe
 
                 //TODO pruebas !!
                 Alarma alarma = new Alarma();
-                alarma.setDias("L,M");
+                alarma.setDias("D");
                 alarma.setHora(String.valueOf(hora));
                 alarma.setMinutos(String.valueOf(minutos));
 

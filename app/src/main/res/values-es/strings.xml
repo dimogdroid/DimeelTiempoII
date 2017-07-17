@@ -35,4 +35,12 @@
     <string name="error_unahthorized">Error unahthorized</string>
     <string name="error_unknown_error">Error desconocido</string>
     <string name="estasseguro">¿Estas seguro?</string>
+    <string name="alarmainvalida">Error Alarma</string>
+    <string name="borrar">Eliminar</string>
+    <string name="delalarma">De Alarma</string>
+    <string name="manana">"Y mañana "</string>
+    <string name="provincias">Provincias</string>
+    <string name="textalarma">¿Quieres eliminar la alarma?</string>
+    <string name="municipios">Municipios</string>
+    <string name="escuchame">Escuchame !!</string>
 </resources>

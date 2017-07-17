@@ -35,7 +35,13 @@
     <string name="manana"> . And tomorrow, </string>
     <string name="alarmainvalida">    Alarm Error</string>
     <string name="delalarma">Del Alarm</string>
-    <string name="textalarma">You want to delete the alarm?</string>
+    <string name="textalarma">Do you want to delete the alarm?</string>
     <string name="borrar">Delete</string>
-
+    <string name="addfav">Added to Favorites</string>
+    <string name="estasseguro">Are you sure?</string>
+    <string name="hello_blank_fragment">Hello</string>
+    <string name="otros">Others</string>
+    <string name="provincias">Provincias</string>
+    <string name="municipios">Municipios</string>
+    <string name="escuchame">Listen to me!</string>
 </resources>

@@ -1,50 +1,107 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:orientation="vertical">
-
-    <Spinner
-        android:id="@+id/spnProvincias"
+    xmlns:fbutton="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:weightSum="5.5"
+    >
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"/>
+        android:layout_weight="1">
 
-    <Spinner
-        android:id="@+id/spnMunicipios"
+    </LinearLayout>
+
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/spnProvincias"/>
+        android:orientation="vertical"
+        android:id="@+id/lnyProv"
+        android:layout_weight="1.5"
+        android:layout_margin="10dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/provincias"
+            android:textColor="#FFFFFF"
+            android:gravity="center"
+            android:background="#3F51B5"
+            android:layout_marginBottom="10dp"/>
+        <Spinner
+            android:id="@+id/spnProvincias"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lnyMun"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lnyProv"
+        android:layout_margin="10dp"
+        android:layout_weight="1.5"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/municipios"
+            android:textColor="#FFFFFF"
+            android:gravity="center"
+            android:background="#3F51B5"
+            android:layout_marginBottom="10dp"/>
+
+        <Spinner
+            android:id="@+id/spnMunicipios"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"/>
+    </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:layout_below="@+id/spnMunicipios"
-        android:gravity="center_horizontal">
+        android:layout_below="@+id/lnyMun"
+        android:background="#c4daff"
+        android:layout_weight="0.5"
+        android:layout_margin="10dp"
+        android:gravity="center_horizontal"
+        android:weightSum="2">
 
         <ImageView
             android:id="@+id/imgaddfavesp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignParentBottom="true"
+            android:layout_weight="1"
+            android:layout_gravity="center_vertical"
             android:src="@drawable/stargold"/>
 
-        <br.com.simplepass.loading_button_lib.customViews.CircularProgressButton
+        <info.hoang8f.widget.FButton
             android:id="@+id/btn_id"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:background="@color/colorPrimary"
-            android:text="Púlsame"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            fbutton:buttonColor="@color/fbutton_color_peter_river"
+            fbutton:shadowColor="@color/fbutton_color_asbestos"
+            fbutton:shadowEnabled="true"
+            fbutton:shadowHeight="5dp"
+            fbutton:cornerRadius="5dp"
             android:textColor="#FFFFFF"
-            android:drawableLeft="@drawable/volumeicon"
-            app:spinning_bar_width="4dp"
-            app:spinning_bar_color="#FFF"
-            app:spinning_bar_padding="6dp"
-          />
+            android:text="@string/escuchame" />
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+
     </LinearLayout>
 
-</RelativeLayout>
+</LinearLayout>
